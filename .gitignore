@@ -1,0 +1,5 @@
+# MAC OSX file
+.DS_Store
+
+# ignore colors folder
+colors/
