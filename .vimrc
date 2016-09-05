@@ -130,12 +130,13 @@ nnoremap <F2> :call HideNumber()<CR>
 nmap <silent> <F3> :NERDTreeToggle<CR>
 nmap <silent> <F4> :TagbarToggle<CR>
 nmap <silent> <F6> :SyntasticCheck<CR>
+nmap <silent> <F7> :SyntasticReset<CR>
+set pastetoggle=<F8>
 if exists("$VIRTUAL_ENV")
     autocmd FileType python map <buffer> <F5> :!$VIRTUAL_ENV'/bin/python' %<CR>
 else
     autocmd FileType python map <buffer> <F5> :!python %<CR>
 endif
-set pastetoggle=<F7>
 autocmd BufWritePre * :%s/\s\+$//e    "delete trailing tab or space
 
 "" Configuration for tagbar
